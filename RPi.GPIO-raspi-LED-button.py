@@ -13,12 +13,12 @@ GPIO.setup(6, GPIO.OUT)
 while True:
     if not GPIO.input(23):
         GPIO.output(5, 1)
-        time.sleep(1)
+        sleep(1)
         GPIO.output(5, 0)
 
     if not GPIO.input(24):
         GPIO.output(6, 1)
-        time.sleep(1)
+        sleep(1)
         GPIO.output(6, 0)
     if not GPIO.input(25):
         import sys
