@@ -13,11 +13,11 @@ GPIO.setup(21, GPIO.OUT, initial=0)
 while True:
     if not GPIO.input(23):
         GPIO.output(20, 1)
-        Print("LED 1 is on")
+        print("LED 1 is on")
 
     if not GPIO.input(24):
         GPIO.output(21, 1)
-        Print("LED 2 is on")
+        print("LED 2 is on")
     if not GPIO.input(25):
         import sys
 
