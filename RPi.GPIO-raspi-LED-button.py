@@ -19,7 +19,8 @@ while True:
         GPIO.output(21, 1)
         print("LED 2 is on")
     if not GPIO.input(25):
+        GPIO.output(20, 0)
+        GPIO.output(21, 0)
         import sys
-
         sys.exit()
     sleep(0.25)
